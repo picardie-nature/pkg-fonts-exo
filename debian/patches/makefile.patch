@@ -1,0 +1,25 @@
+add makefile
+--- /dev/null
++++ b/Makefile
+@@ -0,0 +1,8 @@
++fontdir=/usr/share/fonts/truetype/ttf-exo
++build: *-TTF.sfd
++	fontforge -lang=ff ./convfonts $?
++clean:
++	rm -f *.ttf
++install: *.ttf
++	install -d $(DESTDIR)/$(fontdir)
++	install $? -t $(DESTDIR)/$(fontdir)/
+--- /dev/null
++++ b/convfonts
+@@ -0,0 +1,10 @@
++#!/usr/bin/fontforge -lang=ff
++i = 1;
++while ( i < $argc )
++	Open($argv[i])
++	Print($fontname)
++	ttfile = $fontname + ".ttf"
++	Generate(ttfile)
++	Close()
++	i++
++endloop

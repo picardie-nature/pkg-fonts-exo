@@ -1,0 +1,5 @@
+fonts-exo (1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Nicolas Damiens <nicolas@damiens.info>  Wed, 13 Aug 2014 14:31:42 +0200

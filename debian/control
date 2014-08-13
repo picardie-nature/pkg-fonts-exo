@@ -1,0 +1,15 @@
+Source: fonts-exo
+Section: fonts
+Priority: optional
+Maintainer: Nicolas Damiens <nicolas@damiens.info>
+Build-Depends: debhelper (>= 8.0.0), fontforge
+Standards-Version: 3.9.3
+Homepage: http://ndiscovered.com/exo-2/
+#Vcs-Git: git://git.debian.org/collab-maint/fonts-exo.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/fonts-exo.git;a=summary
+
+Package: fonts-exo
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Exo Typeface
+ Exo is a geometric sans serif font with a technological feel.
